@@ -25,9 +25,7 @@ jobs:
 
     - name: Git Checkout
       uses: actions/checkout@v2
-      
-    - name: Secrets Sync Action
-      uses: google/secrets-sync-action@v1.4.1
+
   
     - name: Build Docker Image
       run:
