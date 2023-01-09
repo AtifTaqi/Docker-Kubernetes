@@ -48,8 +48,9 @@ jobs:
           username: ${{ secrets.DOCKER_REPOSITORY }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Build and push Docker images
-      uses: docker/build-push-action@v3.2.0
+    - name: Docker Build & Push Action
+      uses: mr-smithers-excellent/docker-build-push@v5.8
+
       
 
       
