@@ -25,7 +25,9 @@ jobs:
       RESOURSE_GROUP: aks-atif
 
     steps:
+      - name: Git Checkout
       - uses: actions/checkout@v3
+       
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
