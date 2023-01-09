@@ -55,8 +55,8 @@ jobs:
       with:
         image: atiftaqi/node-js-app
         registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: ${{ secrets.DOCKER_REPOSITORY }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
       
 
       
