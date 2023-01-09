@@ -54,7 +54,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
           context: .
-          file: Docker-Kubernetes/Dockerfile
+         # file: Docker-Kubernetes/Dockerfile
           push: ${{ github.ref_type == 'tag' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
