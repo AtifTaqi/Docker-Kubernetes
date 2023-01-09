@@ -58,6 +58,10 @@ jobs:
         username: ${{ secrets.DOCKER_REPOSITORY }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
       
+    - uses: Azure/k8s-deploy@v4
+      with:
+       namespace: 'docker-deployment'
+       run: kubectl run node-js-app –-image=atiftaqi/node-js-app  –-port=3000 –-generator=run/v1
 
       
      
